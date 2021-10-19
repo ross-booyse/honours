@@ -19,17 +19,3 @@ test
 test <- fisher.test(df)
 test
 
-install.packages("genetics")
-library(genetics)
-example.data  <- c("starOther/starOther","starOther/star28","star28/star28)
-g1 <- genotype(example.data)
-g1
-HWE.test(g1)
-
-library(genetics)
-two.data   <- c(rep("*1/*1", 346),
-                  rep("*1/*28",138),
-                  rep("*28/*28",10)
-g2  <- genotype(two.data)
-g2
-HWE.test(g2)
